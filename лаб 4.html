@@ -1,0 +1,63 @@
+<HTML>
+	<HEAD>
+		<TITLE>Лабораторная работа №4</TITLE>
+		<META CHARSET="UTF-8">
+	</HEAD>
+	<BODY>
+		<FORM action="" method=post enctype="multipart/form-data">
+			ФИО: <br>
+			<textarea name=fullname cols=15 rows=1 required></textarea> <br>
+			дата рождения <br>
+			<input type=date name=birthday required> <br>
+			Наличие гражданства РФ <br>
+			<input type=radio name=cityzenship value=да> да <br>
+			<input type=radio name=cityzenship value=нет checked> нет <br>
+			Образование <br>
+			<select name=education required>
+				<option value=Высш>Высшее</option>
+				<option value=Сроб>Среднее общее</option>
+				<option value=Српро>Среднее профессиональное</option>
+				<option value=нет>Без образования</option>
+			</select> <br>
+			Введите секретное слово <br>
+			<textarea name=fullname cols=15 rows=1 required></textarea> <br>
+			Знание языков <br>
+			<input type=checkbox name=languages value=en> Английский <br>
+			<input type=checkbox name=languages value=de> Немецкий <br>
+			<input type=checkbox name=languages value=fr> Французский <br>
+			<input type=checkbox name=languages value=sp> Испанский <br>
+			<br>
+			Цвет глаз <br>
+			<input type=color name=eyes required> <br>
+			Ваш рост <br>
+			150<input type=range name=height min=150 max=196 required>195 <br>
+			Укажите адрес электронной почты, мы обязательно свяжемся с вами. <br>
+			Email:<input type=email name=address required> <br>
+			Прикрепите к резюме вашу фотографию
+			<input type=file name=photo required> <br>
+			<br>
+			<input type=submit name=registration value=регистрация>
+			<input type=reset name=clear value='сбросить данные'>
+			
+			<br>
+			<br>
+			<br>
+			
+			<FORM action="http:\\test1.server.ru\work\1.php" method=post enctype="application/x-www-form-urlencoded"> 
+				<textarea name='your_name'></textarea>
+				<select name='intel_limit'>
+					<option value='Да'>Да</option>
+					<option value='Нет'>Нет</option>
+				</select>
+				<input type='checkbox' name='Vasia' value='Ready'>
+				<input type='checkbox' name='Kolia' value='Ready'>
+				<input type='checkbox' name='Tolia' value='Ready'>
+				<input type='checkbox' name='Fedia' value='Ready'>
+				<input type='radio' name='number' value=345>
+				<input type='radio' name='number' value=563>
+				<input type='radio' name='number' value=812>
+				<input type='radio' name='number' value=996>
+				<input name='secure' value='sekretnaya infa' hidden>
+			</FORM>
+		</FORM>
+	</BODY>
